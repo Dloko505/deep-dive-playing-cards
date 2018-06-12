@@ -16,7 +16,8 @@ class SuitTest {
   @org.junit.jupiter.api.Test
   void testtoString() {
     for (Suit suit : Suit.values()) {
-      suit.equals(uniSuit);
+      assertTrue(suit.toString().equals(uniSuit[suit.ordinal()]));
+      System.out.println(suit);
     }
   }
 }
