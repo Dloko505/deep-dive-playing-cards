@@ -1,4 +1,4 @@
-package edu.cnm.deepdive;
+package edu.cnm.deepdive.cards;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,9 +14,9 @@ class SuitTest {
   };
 
   @org.junit.jupiter.api.Test
-  void testtoString() {
+  void testToString() {
     for (Suit suit : Suit.values()) {
-      assertTrue(suit.toString().equals(uniSuit[suit.ordinal()]));
+      assertEquals(suit.toString(), uniSuit[suit.ordinal()]);
       System.out.println(suit);
     }
   }
