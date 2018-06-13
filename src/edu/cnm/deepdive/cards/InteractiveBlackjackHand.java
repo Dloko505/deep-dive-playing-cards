@@ -16,7 +16,7 @@ public class InteractiveBlackjackHand extends BlackjackHand {
   @Override
   public void play() throws InsufficientCardsException {
     boolean stay = false;
-    while ((getValue() <= 21) && !isBusted() && !stay) {
+    while ((getValue() < 21) && !isBusted() && !stay) {
       System.out.println(this);
       Boolean hit = null;
       while (hit == null) {
